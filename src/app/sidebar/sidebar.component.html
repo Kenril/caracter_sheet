@@ -1,0 +1,12 @@
+<div class="navbar bg-light">
+	<nav class="navbar">
+		<ul class="nav navbar-nav">
+			<li *ngFor="let item of tabs"
+			    [ngClass]="{'active': selectedItem == item}"
+			    (click)="changeActive($event, item)"
+			>
+				{{ item }}
+			</li>
+		</ul>
+	</nav>
+</div>
