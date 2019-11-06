@@ -1,1 +1,20 @@
-<p>edit works!</p>
+<div class="row">
+	<div class="col-4 input-group mb-3">
+		<label>
+			<input class="form-control mb-2" placeholder="Prénom" #cSurname type="text">
+			<input class="form-control mb-2" placeholder="Nom" #cName type="text">
+		</label>
+	</div>
+	<div class="col-4">
+		<label>
+			<input class="form-control mb-2" placeholder="Titre" #cTitle>
+			<input class="form-control mb-2" placeholder="Surnom" #cNickname>
+		</label>
+	</div>
+</div>
+<div class="row">
+	<div class="col-8"></div>
+	<div class="col-4">
+		<button (click)="saveCharacter()" class="btn btn-success"> Save </button>
+	</div>
+</div>

@@ -1,13 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-light">
-	<a class="navbar-brand" href="#">Miroirs des Mondes</a>
-	<button class="navbar-toggler">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse">
-		<ul class="navbar-nav ml-auto">
+<div class="ml-auto my-navbar-div">
+	<nav class="navbar navbar-expand-md my-navbar">
+		<a class="navbar-brand light-text title" href="https://miroirsdesmondes.wixsite.com/aumia">Miroirs des Mondes</a>
+		<ul class="navbar-nav">
 			<li class="nav-item">
-				<button class="login">Login</button>
+				<a [routerLink]="['creation']"
+					class="light-text"> Création </a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['visualiser']"
+					class="light-text"
+				> Visualiser </a>
 			</li>
 		</ul>
-	</div>
-</nav>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<div class="g-signin2 ml-auto" data-onsuccess="onSignIn"></div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>

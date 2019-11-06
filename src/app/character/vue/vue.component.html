@@ -1,0 +1,14 @@
+<div *ngIf="character">
+	<div class="row container-fluid">
+		<div class="col-3"><p>Name: {{ character.surname }} {{ character.name }}</p></div>
+		<div class="col-3"><p *ngIf="character.title !== ''">Title: {{ character.title }}</p></div>
+		<div class="col-3" *ngIf="character.img !== ''"><img [src]="character.img" alt="default.ico"></div>
+	</div>
+	<div class="row container-fluid">
+		<div class="col-3"><p *ngIf="character.nickname !== ''">Nickname: {{ character.nickname }}</p></div>
+	</div>
+
+	<div>
+		<!-- For characteristics / paths / other ? -->
+	</div>
+</div>
